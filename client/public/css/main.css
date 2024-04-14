@@ -1,0 +1,183 @@
+@import url('https://fonts.cdnfonts.com/css/new-super-mario-font-u');
+
+* {
+	box-sizing: border-box;
+}
+html,
+body {
+	margin: 0;
+	padding: 0;
+ 
+}
+
+.divMain {
+  display: flex;
+	flex-direction: column;
+  align-items: center;
+	justify-content: center;
+}
+
+
+h1 {
+  font-family: 'New Super Mario Font U', sans-serif;
+  color: #1341d6;
+  font-size: 100px;
+}
+h1 em {
+	font-style: normal;
+	font-weight: bold;
+	color: #777;
+}
+
+h3 {
+  font-family: 'New Super Mario Font U', sans-serif;
+  color: #1341d6;
+  font-size: 50px;
+}
+h3 em {
+	font-style: normal;
+	font-weight: bold;
+	color: #777;
+}
+
+h4 {
+  font-family: 'New Super Mario Font U', sans-serif;
+  color: #1341d6;
+  font-size: 25px;
+}
+h4 em {
+	font-style: normal;
+	font-weight: bold;
+	color: #777;
+}
+
+canvas {
+ background-color: #000000;
+	border: 3px dashed #777;
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	top: 0;
+	left: 0;
+	border: #000000;
+}
+
+button {
+  appearance: none;
+  background-color: #FFFFFF;
+  border-radius: 40em;
+  border-style: none;
+  box-shadow: #ADCFFF 0 -12px 6px inset;
+  box-sizing: border-box;
+  color: #000000;
+  cursor: pointer;
+  display: inline-block;
+  font-family: 'New Super Mario Font U', sans-serif;
+  font-size: 1.2rem;
+  font-weight: 700;
+  letter-spacing: -.24px;
+  margin: 0.3%;
+  outline: none;
+  padding: 1rem 1.3rem;
+  quotes: auto;
+  text-align: center;
+  text-decoration: none;
+  transition: all .15s;
+
+}
+
+button:hover {
+  background-color: #FFC229;
+  box-shadow: #FF6314 0 -6px 8px inset;
+  transform: scale(1.125);
+}
+
+button:active {
+  transform: scale(1.025);
+}
+
+@media (min-width: 768px) {
+  button {
+    font-size: 1.5rem;
+    padding: .75rem 2rem;
+  }
+}
+
+*{
+  margin: 0;
+  padding: 0;
+}
+section{
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  background: #3586ff;
+  overflow: hidden;
+}
+section .air{
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 100px;
+  background: url(https://1.bp.blogspot.com/-xQUc-TovqDk/XdxogmMqIRI/AAAAAAAACvI/AizpnE509UMGBcTiLJ58BC6iViPYGYQfQCLcBGAsYHQ/s1600/wave.png);
+  background-size: 1000px 100px
+}
+
+section .vide {
+  margin: 7%;
+  display: flex;
+  align-items: center;
+	justify-content: center;
+}
+
+section .divMain {
+  margin: auto;
+  display: flex;
+  align-items: center;
+	justify-content: center;
+}
+section .air.air1{
+  animation: wave 30s linear infinite;
+  z-index: 1000;
+  opacity: 1;
+  animation-delay: 0s;
+  bottom: 0;
+}
+section .air.air2{
+  animation: wave2 15s linear infinite;
+  z-index: 999;
+  opacity: 0.5;
+  animation-delay: -5s;
+  bottom: 10px;
+}
+section .air.air3{
+  animation: wave 30s linear infinite;
+  z-index: 998;
+  opacity: 0.2;
+  animation-delay: -2s;
+  bottom: 15px;
+}
+section .air.air4{
+  animation: wave2 5s linear infinite;
+  z-index: 997;
+  opacity: 0.7;
+  animation-delay: -5s;
+  bottom: 20px;
+}
+@keyframes wave{
+  0%{
+    background-position-x: 0px; 
+  }
+  100%{
+    background-position-x: 1000px; 
+  }
+}
+@keyframes wave2{
+  0%{
+    background-position-x: 0px; 
+  }
+  100%{
+    background-position-x: -1000px; 
+  }
+}
